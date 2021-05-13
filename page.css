@@ -10,14 +10,22 @@
     list-style: none;
     box-sizing: border-box;
 }
-::before,::after{
-    box-sizing: border-box;
-  }
+html{
+    height:100%;
+    padding:0;
+    margin:0;
+}
 body{
+    height:100%;
+    padding:0;
+    margin:0;
     font-family: monospace;
 }
 nav{
     background: rgb(69, 69, 243);
+    overflow: hidden;
+    position: fixed;
+    z-index:99;
     height: 80px;
     width: 100%;
 }
@@ -46,18 +54,441 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 3px;
 }
-.nav__link:hover{
-    color: var(--white-color);
-  }
-a.active{
-    color: red;
+.one{
+    background-color: #2363d9;
+    height: 100%;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #2363d9, aqua);
+    border-radius: 0% 0% 64% 45% / 100% 100% 25% 16%  ;
+}
+.one1{
+    background-image: url('assets model2/BG-HomePage-High.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 120%;
+    position: relative;
+    left: -250px;
+    opacity: .3;
+}
+.one2{
+    height: 70%;
+    width: 35%;
+    border-radius: 350px 150px 150px 150px;
+    position: absolute;
+    top: 325px;
+    left: 1000px;
+}
+.one3{
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+.p1{
+    color: white;
+    font-size: 25px;
+    font-family: Microsoft JhengHei;
+    font-style: bold;
+}
+.p2{
+    font-style: bold;
+    font-size: 55px;
+    font-family: Calibri;
+    color: white;
+}
+.p3{
+    color: white;
+}
+.about{
+    background-color: rgba(0, 255, 255, 0.596);
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.about img{
+    transform: translateY(13%);
+    position: relative;
+    color: white;
+}
+.about p{
+    font-size: 150%;
+}
+.two{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+.two1{
+    background-image: url('assets model2/BG-home-new4.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 120%;
+    position: relative;
+    left: -250px;
+}
+.two2{
+    height: 75%;
+    width: 35%;
+    border-radius: 150px 150px 350px 150px;
+    position: absolute;
+    top: 1209px;
+    right: 1000px;
+}
+.two3{
+    position: absolute;
+    top: 1370px;
+    left: 1000px;
+}
+.p4{
+    color: black;
+    font-size: 25px;
+    font-family: Microsoft JhengHei;
+    font-style: bold;
+}
+.p5{
+    font-style: bold;
+    font-size: 55px;
+    font-family: Calibri;
+    color: rgba(179,167,243,255);
+}
+.p6{
+    color: black;
+}
+.three{
+    background-color: white;
+    height: 115%;
+    width: 100%;
+}
+.three1{
+    background-image: url('assets model2/Shapes-icons.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    position: relative;
+    opacity: .3;
 }
 
-.active::before{
-    content: '';
+.card1 {
+    display: grid;
+    grid-template-columns: 345px;
+    grid-template-rows: 75px 80px;
+    grid-template-areas: "image" "text";
+    height: 345px;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     position: absolute;
-    left: 0;
-    width: 2px;
-    height: 32px;
-    background-color: var(--white-color);
+    left: 250px;
+    top: 2209px;
   }
+  .card-image1 {
+    grid-area: image;
+  }
+  .card-text1 {
+    grid-area: text;
+    font-size: large;
+    margin: 15px;
+  }
+  
+  .card-image1 {
+    grid-area: image;
+    background-image: url("assets\ model2/Group-11-Copy.png");
+    background-size: 22%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+.a{
+    color: grey;
+    font-size:25px;
+    font-weight: 300;
+  }
+.card2 {
+    display: grid;
+    grid-template-columns: 345px;
+    grid-template-rows: 75px 80px;
+    grid-template-areas: "image" "text";
+    height: 345px;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    position: absolute;
+    left: 750px;
+    top: 2209px;
+  }
+.card-text2 {
+    grid-area: text;
+    font-size: large;
+    margin: 15px;
+  }
+.card-text2 a{
+    color: blue;
+    grid-area: text;
+    font-size: large;
+    margin: 15px;
+  }
+  .card-text1 a{
+    color: blue;
+    grid-area: text;
+    font-size: large;
+    margin: 15px;
+  }
+.card-image2 {
+    grid-area: image;
+    background-image: url("assets\ model2/Group-13-Copy.png");
+    background-size: 22%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .card3 {
+    display: grid;
+    grid-template-columns: 345px;
+    grid-template-rows: 75px 80px;
+    grid-template-areas: "image" "text";
+    height: 345px;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    position: absolute;
+    top: 2209px;
+    left: 1250px;
+  }  
+  .card-image3 {
+    grid-area: image;
+    background-image: url("assets\ model2/Group-17.png");
+    background-size: 22%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+.card4 {
+    display: grid;
+    grid-template-columns: 345px;
+    grid-template-rows: 75px 80px;
+    grid-template-areas: "image" "text";
+    height: 345px;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    position: absolute;
+    top: 2609px;
+    left: 250px;
+  }
+.card-image4 {
+    grid-area: image;
+    background-image: url("assets\ model2/Group-21.png");
+    background-size: 22%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .card5 {
+    display: grid;
+    grid-template-columns: 345px;
+    grid-template-rows: 75px 80px;
+    grid-template-areas: "image" "text";
+    height: 345px;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    position: absolute;
+    top: 2609px;
+    left: 750px;
+  }
+.card-image5 {
+    grid-area: image;
+    background-image: url("assets\ model2/Group-20.png");
+    background-size: 22%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+.card6 {
+    display: grid;
+    grid-template-columns: 345px;
+    grid-template-rows: 75px 80px;
+    grid-template-areas: "image" "text";
+    height: 345px;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    position: absolute;
+    top: 2609px;
+    left: 1250px;
+  }
+.card-image6 {
+    grid-area: image;
+    background-image: url("assets\ model2/content-icon-new.png");
+    background-size: 22%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+.three3{
+    background-color: white;
+    width:100%;
+    height: 20%;
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 200px;
+    top: 2000px;
+}
+.ha1{
+    font-size: 25px;
+}
+.ha2{
+    font-size: 50px;
+}
+.ser{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    position: absolute;
+    right: 400px;
+    top: 70px;
+}
+.four{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.four1{
+    background-image: url('assets model2/BG-TEAN-Home.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    position: relative;
+}
+.card7 {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-rows: 300px 130px;
+    width: 480px;
+    grid-template-areas: "image" "text";
+    border-radius: 18px;
+    background: white;
+    position: absolute;
+    top: 3400px;
+    text-align: center;
+    left: 200px;
+  }
+  .card-text7 {
+    grid-area: text;
+    font-size: 25px;
+    margin: 15px;
+  }
+  
+  .card-image7 {
+    grid-area: image;
+    background-image: url("assets\ model2/Team-5.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px 30px 0px 0px;
+  }
+  .card8 {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-rows: 300px 130px;
+    width: 480px;
+    grid-template-areas: "image" "text";
+    border-radius: 18px;
+    background: white;
+    position: absolute;
+    text-align: center;
+    top: 3400px;
+    left: 700px;
+  }
+  .card-image8{
+    grid-area: image;
+    background-image: url("assets\ model2/Team-8.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 30px 30px 0px 0px;
+  }
+  .four2{
+      position: absolute;
+      top: 3400px;
+      left: 1250px;
+  }
+  .hu1{
+      font-size: 50px;
+  }
+  .hu2{
+      font-size: 70px;
+      color: rgba(81,63,219,255);
+  }
+  .meet{
+    background-color: rgba(0,220,253,255);
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.na{
+    color: rgba(0,220,253,255);
+}
+.five{
+    background-image: url('assets model2/BG-Testemonials-home-page.png');
+    background-repeat: no-repeat;
+    height: 75%;
+    width: 100%;
+    position: relative;
+}
+
+.aa{
+  grid-area: text;
+  position: absolute;
+  top: 10px;
+}
+.ab{
+  grid-area: image;
+  background-image: url('assets\ model2/Testimonial-2.png');
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0px;
+}
+.ac{
+  grid-area: text;
+}
